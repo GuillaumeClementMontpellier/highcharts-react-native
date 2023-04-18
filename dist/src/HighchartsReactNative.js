@@ -226,6 +226,13 @@ export default class HighchartsReactNative extends React.PureComponent {
                         startInLoadingState = {this.props.loader}
                         style={this.props.webviewStyles}
                         androidHardwareAccelerationDisabled
+                        onContentProcessDidTerminate={(syntheticEvent) => {
+                            if (this.webviewRef) {
+                                const { nativeEvent } = syntheticEvent;
+                                console.warn('Content process terminated, reloading', nativeEvent);
+                                this.webviewRef.reload();
+                            }
+                        }}
                         {...this.props.webviewProps}
                     />
                 </View>
