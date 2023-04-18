@@ -50,7 +50,7 @@ Packages which should be installed within your project:
 Get package from NPM in your React app:
 
 ```bash
-npm install @highcharts/highcharts-react-native
+npm install @koovea/highcharts-react-native
 ```
 
 You can either install this wrapper within app based on [Expo tools](https://expo.io/learn), or bare [React Native](https://facebook.github.io/react-native/docs/getting-started) app.
@@ -102,7 +102,7 @@ Import this package into your React Native project and render the chart:
 ```jsx
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HighchartsReactNative from '@highcharts/highcharts-react-native'
+import HighchartsReactNative from '@koovea/highcharts-react-native'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
 ```jsx
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HighchartsReactNative from '@highcharts/highcharts-react-native'
+import HighchartsReactNative from '@koovea/highcharts-react-native'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -198,7 +198,7 @@ Using Highcharts modules e.g solid-gauge, drilldown, or exporting
 ```jsx
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HighchartsReactNative from '@highcharts/highcharts-react-native'
+import HighchartsReactNative from '@koovea/highcharts-react-native'
 
 const modules = [
     'solid-gauge'
@@ -253,7 +253,7 @@ import {
     View,
     Button
 } from 'react-native';
-import HighchartsReactNative from '@highcharts/highcharts-react-native'
+import HighchartsReactNative from '@koovea/highcharts-react-native'
 
 export default class App extends React.Component {
     constructor(props) {

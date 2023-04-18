@@ -4,7 +4,7 @@ import {
     View,
     Button
 } from 'react-native';
-import HighchartsReactNative from '@highcharts/highcharts-react-native';
+import HighchartsReactNative from '@koovea/highcharts-react-native';
 
 const modules = [
     //'solid-gauge'
