@@ -11,26 +11,14 @@ Official minimal [Highcharts](https://www.highcharts.com/) wrapper for React Nat
 1. [Getting started](#getting-started)
     1. [General prerequisites](#general-prerequisites)
     2. [Installing](#installing)
-    3. [Updating Highcharts package](#updating-highcharts=package)
+    3. [Updating Highcharts package](#updating-highcharts-package)
     4. [Usage](#usage)
         1. [Basic usage example](#basic-usage-example)
-        2. [Highcharts chart](#highchart-chart)
+        2. [Highcharts chart](#highcharts-chart)
         3. [Highcharts live data update](#highcharts-live-data-update)
         4. [Highcharts advanced series](#highcharts-advanced-series)
         5. [Optimal way to update](#optimal-way-to-update)
 2. [Options details](#options-details)
-    1. [options](#options)
-    2. [styles](#styles)
-    3. [modules](#modules)
-    4. [callback](#callback)
-    5. [useSSL](#useSSL)
-    6. [useCDN](#useCDN)
-    7. [data](#data)
-    8. [onMessage](#onMessage)
-    9. [loader](#loader)
-    10. [webviewStyles](#webviewStyles)
-    11. [setOptions](#setOptions)
-    12. [devPort](#devPort)
 3. [Get repository](#get-repository)
 4. [FAQ](#faq)
     1. [Where to look for help?](#where-to-look-for-help)
@@ -55,7 +43,7 @@ Packages which should be installed within your project:
 
 ***If you're using this package with Expo Tools, please make sure your  `Expo SDK`  version is higher than or equal to  `v38.0.0`, otherwise use the  `v2.2.3`  version of this package, which should work from  `v33.0.0`.***
 
-***In bare React Native application you need to also install the `react-native-unimodules` package, and configure the content of `ios` and `android` build directiories like it's described [here](https://docs.expo.io/bare/installing-unimodules/#installation).***
+***In bare React Native application you need to also install the `expo` package, and configure the content of `ios` and `android` build directiories accordingly.***
 
 ### Installing
 
@@ -204,7 +192,8 @@ const styles = StyleSheet.create({
 });
 ```
 
-### Using Highcharts modules e.g solid-gauge, drilldown, or exporting
+### Highcharts advanced series
+Using Highcharts modules e.g solid-gauge, drilldown, or exporting
 
 ```jsx
 import React from 'react';
@@ -428,3 +417,7 @@ Bugfixes:
 - Docs improved
 Bugfixes:
 - [#92] - Charts sometimes fail to render
+
+
+### 4.0.0
+- Changed dependencies of `react-native-unimodules` to `expo` modules for newer react-native version (ios)

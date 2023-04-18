@@ -1,35 +1,19 @@
 {
-  "name": "@highcharts/highcharts-react-native",
-  "version": "3.1.7",
+  "name": "@koovea/highcharts-react-native",
+  "version": "4.0.0",
   "license": "SEE LICENSE IN <LICENSE>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/highcharts/highcharts-react-native-official.git"
-  },
   "dependencies": {
-    "metro-config": "^0.60.0",
-    "react-native-unimodules": "^0.10.1"
+    "expo-asset": "^8.9.1",
+    "expo-file-system": "^15.2.2",
+    "metro-config": "^0.60.0"
   },
-  "keywords": [
-    "highcharts",
-    "highstock",
-    "highmaps",
-    "react-native"
-  ],
   "description": "Highcharts react native wrapper",
-  "bugs": {
-    "url": "https://github.com/highcharts/highcharts-react-native"
-  },
-  "contributors": [
-    "Sebastian Bochan <sebastian@blacklabel.pl>",
-    "Daniel Studencki <daniel.studencki@gmail.com>"
-  ],
-  "homepage": "https://github.com/highcharts/highcharts-react-native#readme",
   "author": "Highcharts",
   "peerDependencies": {
     "react": "~16.11.0",
-    "react-native": "^0.63.2",
-    "react-native-webview": "^10.6.0"
+    "react-native": "^0.69.9",
+    "react-native-webview": "^11.26.1",
+    "expo": "^46.0.21"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
